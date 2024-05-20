@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .padding
+    {
+    padding: 50px 50px 50px 50px;
+    }
+    </style>
+<body style="background-color:rgba(250, 253, 248, 0.941);">
+    <center>
+    
+    <h3 style="font-size: 42px">
+    {{predicted_image}}
+    <br>
+    <br>
+    <br>
+    {% if predicted_image == "Prediction Result: 1" %}
+      <p style="color:red">Patient is suffering from Sepsis</p>
+      
+    {% else %}
+      <p style="color:green">Everything Looks Good..!</p>
+    {% endif %}
+    </h3>
+    <center>
+</body>
+</html>
